@@ -28,18 +28,18 @@ nav {
 }
 
 /*Para posicionar la aparición del navegador*/
-nav:hover .menu{
+nav:hover .menu {
     left: -31px;
 }
 
-/*Posicionar el menú y hacer que aparezca*/
+/*Posicionar el menú*/
 .menu {
     position: absolute;
-    width: 260px;
-    height: 200px;
-    top: 25px;
-    padding: 30px 20px 20px 10px;
-    left: -300px;
+    width: 250px;
+    height: 130px;
+    top: 45px;
+    padding: 10px 10px 20px 10px;
+    left: -300px;/*-300px*/
 }
 
 .menu>li:first-child:hover {
@@ -49,11 +49,6 @@ nav:hover .menu{
 .menu>li:first-child {
     position: relative;
     padding-left: 20px;
-}
-
-.menu>li:first-child:hover .submenu {
-    font-size: 25px;
-    display: block;
 }
 
 .menu>li:last-child {
@@ -81,20 +76,31 @@ nav:hover .menu{
     font-size: 25px;
 }
 
+/*Hover para hacer aparecer al submenu*/
+
+.menu>li:first-child:hover .submenu {
+    display: block;
+}
+
 .submenu {
     position: absolute;
-    width: 150px;
-    right: -145px;
-    top: 30px;
+    width: 260px;
+    top: 8px;
+    left: 235px;
     display:none;
-    background-color: #F9F9F9;
-    padding: 3px;
+    padding: 2px;
     border-radius: 5px;
 }
 
 .submenu li {
+    background-color: #F9F9F9;
     padding: 7px;
     font-size: 20px;
+}
+
+.submenu>li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .submenu>li img {
@@ -105,7 +111,7 @@ nav:hover .menu{
     position: relative;
     left: 0;
     text-decoration: none;
-    color: black;
+    color: black; 
     transition: all 0.3s;
 }
 
@@ -116,7 +122,7 @@ nav:hover .menu{
 /*Posición icono principial*/
 header a {
     position: absolute;
-    left: 50%;
+    left: 49%;
 }
 
 /*Fondo resto header*/
@@ -148,32 +154,72 @@ h2 {
     position: relative;
     background-color: #F9F9F9;
     border-radius: 5px;
-    height: 300px;
-    margin: 0 100px;
+    height: 450px;
+    margin: 0 200px 30px 200px;
 }
 
 .caja_servicios h3 {
     text-align: center;
     font-size: 35px;
-
+    padding-top: 30px;
 }
 
-.caja_servicios>section:first-child li {
-    position: relative;
-    display: inline;
-
-    margin: 0 auto;
-    transition: all 0.3s;
-    
+.caja_servicios img {
+    display: block;
+    margin-bottom: 20px;
 }
 
-.caja_servicios>section:first-child a {
-    position: relative;
+.caja_servicios a {
+    height: 220px;
+    width: 250px;
+    padding: 20px 65px;
     text-decoration: none;
+    display: block;
     color: black;
     transition: all 0.3s;
     text-transform: uppercase;
-    
+    text-align: center;
+    font-size: 25px;  
+}
+
+.service_plane {
+    position: absolute;
+    display: inline;
+    top: 150px;
+    left: 12%;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.service_cruise {
+    position: absolute;
+    display: inline;
+    top: 150px;
+    left: 32%;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.service_train {
+    position: absolute;
+    display: inline;
+    top: 150px;
+    left: 52%;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.service_bus {
+    position: absolute;
+    display: inline;
+    top: 150px;
+    left: 72%;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /*Pie de página*/
@@ -208,5 +254,5 @@ footer .p2 {
 }
 
 footer>div img {
-    margin-left: 5px;;
+    margin-left: 5px;
 }
