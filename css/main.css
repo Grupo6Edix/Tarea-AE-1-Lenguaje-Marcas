@@ -7,6 +7,10 @@
     /*outline: solid 1px red;*/
 }
 
+body {
+    width: 100%;
+}
+
 /*Estilo para el header, scroll a la página manteniendo elemento*/
 header {
     position: relative;
@@ -85,15 +89,15 @@ nav:hover .menu {
 .submenu {
     position: absolute;
     width: 260px;
-    top: 8px;
-    left: 235px;
+    top: -2px;
+    left: 225px;
     display:none;
     padding: 2px;
     border-radius: 5px;
 }
 
 .submenu li {
-    background-color: #F9F9F9;
+    background-color:#ebebeb;
     padding: 7px;
     font-size: 20px;
 }
@@ -154,14 +158,16 @@ h2 {
     position: relative;
     background-color: #F9F9F9;
     border-radius: 5px;
-    height: 450px;
-    margin: 0 200px 30px 200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 65px 200px;
+    width: fit-content;
 }
 
 .caja_servicios h3 {
     text-align: center;
     font-size: 35px;
-    padding-top: 50px;
+    margin-bottom: 40px;
 }
 
 .caja_servicios img {
@@ -182,43 +188,74 @@ h2 {
     font-size: 25px;  
 }
 
-.service_plane {
-    position: absolute;
-    display: inline;
-    top: 150px;
-    left: 12%;
+.service {
+    display: inline-block;
     transition: all 0.3s;
     background-color: white;
     border-radius: 5px;
 }
 
-.service_cruise {
-    position: absolute;
-    display: inline;
-    top: 150px;
-    left: 32%;
-    transition: all 0.3s;
-    background-color: white;
-    border-radius: 5px;
+.service + .service{
+    margin-left: 20px;
 }
 
-.service_train {
-    position: absolute;
-    display: inline;
-    top: 150px;
-    left: 52%;
-    transition: all 0.3s;
-    background-color: white;
-    border-radius: 5px;
+/*Noticias*/
+
+.contenedor_noticias {
+    background-color: #F9F9F9;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.service_bus {
-    position: absolute;
-    display: inline;
-    top: 150px;
-    left: 72%;
-    transition: all 0.3s;
+.contenedor_noticias section {
+    display: inline-block;
+    width: 70%;
+    padding-left: 50px;
+    border-right: #ebebeb solid 1px;
+}
+
+.contenedor_noticias h3{
+    margin-bottom: 40px;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.noticia_articulo {
+    min-height: 250px;
+    height: fit-content;
     background-color: white;
+    border-radius: 5px;
+    margin: 0px 35px 20px 0px;
+    padding: 10px 20px;
+}
+.noticia_articulo h4 {
+    background-color: #FF7A8A;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-left: 45px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.noticia_articulo img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/*Publicidad*/
+
+aside {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    margin-left: 50px;
+    padding-left: 60px;
+}
+
+aside img {
     border-radius: 5px;
 }
 
@@ -241,9 +278,9 @@ footer .p1 {
 
 footer div {
     position: absolute;
-    width: 250px;
+    width: 230px;
     top: 35px;
-    left: 85%;
+    right: 15px;
 }
 
 footer .p2 {
