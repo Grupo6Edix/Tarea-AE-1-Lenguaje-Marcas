@@ -191,6 +191,7 @@ h2 {
     display: inline-block;
     background-color: white;
     border-radius: 5px;
+    border: #F9F9F9 solid 2px;
 }
 
 .service + .service{
