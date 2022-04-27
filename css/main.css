@@ -43,7 +43,7 @@ nav:hover .menu {
     height: 130px;
     top: 45px;
     padding: 10px 10px 20px 10px;
-    left: -300px;/*-300px*/
+    left: -300px;
 }
 
 .menu>li:first-child:hover {
@@ -195,7 +195,11 @@ h2 {
 }
 
 .service + .service{
-    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.margin_right_service {
+    margin-right: 20px;
 }
 
 .service:hover {
@@ -301,3 +305,100 @@ footer .p2 {
 footer>div img {
     margin-left: 5px;
 }
+
+/*Media Queries:*/
+
+/*General para recolocar las cajas de servicios a la altura correcta durante la transición variable de mas de 1300px*/
+
+@media screen and (max-width: 1505px) {
+    .margin_top_service {
+        margin-top: 25px;
+    }
+}
+
+/*Dispositivos con máximo de pantalla 1300px:*/
+
+@media screen and (max-width: 1300px) {
+    
+    body {
+        width: 1300px;
+    }
+
+    .caja_servicios {
+        width: 1300px;
+        padding: 45px 78px 65px 78px;
+    }
+
+    .service {
+        width: 550px;
+        padding-left: 140px;
+    }
+
+    aside {
+        position: relative;
+        display: inline-block;
+        padding-left: 0;
+        top: -30px;
+    }
+    
+}
+
+/*Dispositivos con máximo de pantalla 900px:*/
+
+@media screen and (max-width: 900px) {
+ 
+    .fixed_header {
+        position: fixed;
+        width: 900px;
+        height: 65px;
+        background-color: #F9F9F9;
+        padding: 10px 20px ;
+        z-index: 1;
+    }
+
+    body {
+        width: 900px;
+    }
+
+    .caja_servicios {
+        width: 900px;
+        padding: 45px 0 65px 0;
+    }
+
+    .caja_servicios h3{
+        padding-left: 20px;
+    }
+
+    .service {
+        width: 900px;
+        padding-left: 325px;
+    }
+
+    .contenedor_noticias h3{  
+        text-align: center;
+    }
+    
+    .contenedor_noticias section {
+        display: inline-block;
+        width: 900px;
+        padding: 0 20px 0 20px;
+    }
+
+    .contenedor_noticias section {
+        padding-left: 50px;
+        padding-bottom: 25px;
+        border-bottom: #ebebeb solid 1px;
+        border-right: none;
+    }
+
+    aside {
+        position: relative;
+        display: inline-block;
+        width: 900px;
+        padding-left: 270px;
+        padding-top: 45px;
+    }
+    
+}
+
+
