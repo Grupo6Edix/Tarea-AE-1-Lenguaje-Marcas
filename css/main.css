@@ -93,7 +93,7 @@ nav:hover .menu {
     left: 225px;
     display:none;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .submenu li {
@@ -126,7 +126,7 @@ nav:hover .menu {
 /*Posición icono principial*/
 header a {
     position: absolute;
-    left: 48%;
+    left: 49%;
 }
 
 /*Fondo resto header*/
@@ -157,7 +157,7 @@ h2 {
 .caja_servicios {
     position: relative;
     background-color: #F9F9F9;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 100px;
     padding: 45px 200px 65px 200px;
@@ -190,7 +190,7 @@ h2 {
 .service {
     display: inline-block;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: #F9F9F9 solid 2px;
 }
 
@@ -232,13 +232,14 @@ h2 {
     min-height: 250px;
     height: fit-content;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0px 35px 20px 0px;
     padding: 10px 20px;
 }
 .noticia_articulo h4 {
     background-color: #FF7A8A;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
     padding-left: 45px;
@@ -247,12 +248,13 @@ h2 {
 }
 
 .noticia_articulo p {
+    font-size: 20px;
     text-align: justify;
 }
 
 .noticia_articulo img {
     float: left;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-right: 15px;
     margin-bottom: 10px;
 }
@@ -268,7 +270,7 @@ aside {
 }
 
 aside img {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /*Pie de página*/
@@ -320,6 +322,15 @@ footer>div img {
 
 @media screen and (max-width: 1300px) {
     
+    .fixed_header {
+        position: fixed;
+        width: 1300px;
+        height: 65px;
+        background-color: #F9F9F9;
+        padding: 10px 20px ;
+        z-index: 1;
+    }
+
     body {
         width: 1300px;
     }

@@ -7,6 +7,7 @@
     <title>Tourlines</title>
     <link rel="icon" href="img/travel.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <header>
@@ -32,97 +33,69 @@
             <h2>Tu agencia de viajes de confianza, y cada día la de más gente</h2>
         </div>
     </header>
-
-<main>
-
-        <h2>Contacta con nosotros</h2>
-        <br/>
-        <br/>
-   
-    <section>
-        <form action="procesarPeticion.jsp" method="get">
-
-        
-        <br/>
-        <br/>
-        Nombre: <input type="text" name="nombre" placeholder="Introduzca su nombre">
-        <br/>
-        <br/>
-        Apellidos: <input type="text" name="apellidos" placeholder="Introduzca sus apellidos">
-        <br/>
-        <br/>
-        Fecha de nacimiento: <input type="date" name="fecha"/>
-        <br/>
-        <br/>
-        Email: <input type="email" ssname="email" placeholder="Introduzca su email" required/>
-        <br/>
-        <br/>
-        
-        <label for="grupo">Particular o empresa: </label>
-            <select name="grupo">
-                <option value="1">Particular</option>
-                <option value="2">Empresa</option>
-            </select>
-        <br/>
-        <br/>
-        Número de personas que viajan: <input type="number" min="1" max="5" step="1" name="particular" required/>
-        <br/>
-        <br/>
-        <label for="sexo">Sexo: </label>
-        <br/>	
-        <br/>
-        <input type="radio" name="sexo" value="H" />Hombre<br />	
-        <input type="radio" name="sexo" value="M" />Mujer<br />	
-        <input type="radio" name="sexo" value="O" />Otro<br />	
-        <br/>
-        <br/>
-        <label for="transporte">Tipo de transporte: </label>
-        <br/>
-        <br/>		
-        <input type="checkbox" name="transporte" value="AV" />Avión<br />	
-        <input type="checkbox" name="transporte" value="TR" />Tren<br />	
-        <input type="checkbox" name="transporte" value="BA" />Barco<br />	
-        <input type="checkbox" name="transporte" value="AUTO" />Autobus<br />	
-        <br/>	
-        <br/>	
-        <label for="referente">Referente a:</label>
-            <select name="referente">
-                <option value="1">Viajes</option>
-                <option value="2">Covid</option>
-                <option value="3" selected>Otros</option>
-
-            </select>
-        <br/>
-        <br/>
-        <label for="consulta">Consulta: </label>
-        <br/>
-        <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
-        <br/>
-        <br/>
-        <label for="terminos">¿Desea recibir información en su correo sobre ofertas de viajes? </label>
-        <br/>	
-        <input type="checkbox" name="terminos" value="Y" /> Sí, quiero recibir información.
-        <br/>	
-        <br/>
-        <input type="submit" value="Enviar"/>
-        <br/>
-        <br/>
-        <input type="reset" value="Limpiar formulario" />
-        <br/>
-        <br/>
-        </form>
-    </section>
-</main>
-
-
-        <footer>
-            <p class="p1">Copyright © 2022 All Rights Reserved by Tourlines.</p>
-            <div>
-                <p class="p2">Síguenos en:</p>
-                <img  src="img/facebook.png" width="40" height="40" alt="Facebook"/>
-                <img  src="img/instagram.png" width="40" height="40" alt="Instagram"/>
-                <img  src="img/twitter.png" width="40" height="40" alt="Twitter"/>
-            </div>
-        </footer>
-    </body>
-    </html>
+    <main>
+        <section class="caja_formulario">
+            <header>
+                <h3>Contacta con nosotros</h3>
+            </header>
+            <article>
+                <form action="procesarPeticion.jsp" method="get">
+                    <div class="separacion_int">
+                        <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" placeholder="Introduzca su nombre">
+                        <label for="apellidos">Apellidos: </label>
+                            <input type="text" name="apellidos" placeholder="Introduzca sus apellidos">
+                        <label for="fech_nac">Fecha de nacimiento: </label>
+                            <input type="date" name="fecha"/>
+                        <label for="email">Email: </label>
+                            <input type="email" ssname="email" placeholder="Introduzca su email" required/>
+                        <label for="sexo">Sexo: </label>
+                            <input class="check_bola" type="radio" name="sexo" value="H"/>Hombre	
+                            <input class="check_bola" type="radio" name="sexo" value="M"/>Mujer
+                            <input class="check_bola" type="radio" name="sexo" value="O"/>Otro
+                    </div>
+                    <div class="separacion_int">
+                        <label for="transporte">Tipo de transporte: </label>	
+                            <input class="check_cuadrado" type="checkbox" name="transporte" value="AV"/>Avión	
+                            <input class="check_cuadrado" type="checkbox" name="transporte" value="TR"/>Tren	
+                            <input class="check_cuadrado" type="checkbox" name="transporte" value="BA"/>Barco	
+                            <input class="check_cuadrado" type="checkbox" name="transporte" value="AUTO"/>Autobus	
+                        <label for="cantidad_personas">Número de viajeros: </label>
+                            <input type="number" min="1" max="5" step="1" name="particular" required/>                   	               
+                        <label for="grupo">Particular o empresa: </label>
+                            <select name="grupo">
+                                <option value="1">Particular</option>
+                                <option value="2">Empresa</option>
+                            </select>
+                    </div>
+                    <div class="separacion_int">
+                        <label for="referente">Referente a:</label>
+                            <select name="referente">
+                                <option value="1">Viajes</option>
+                                <option value="2">Covid</option>
+                                <option value="3" selected>Otros</option>
+                            </select>
+                        <label for="consulta">Consulta: </label>
+                            <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+                    </div>
+                    <div class="separacion_int">    
+                        <label for="terminos">¿Desea recibir información en su correo sobre ofertas de viajes? </label>	
+                            <input type="checkbox" name="terminos" value="Y"/> Sí, quiero recibir información.
+                    </div>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Limpiar formulario"/>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="p1">Copyright © 2022 All Rights Reserved by Tourlines.</p>
+        <div>
+            <p class="p2">Síguenos en:</p>
+            <img  src="img/facebook.png" width="40" height="40" alt="Facebook"/>
+            <img  src="img/instagram.png" width="40" height="40" alt="Instagram"/>
+            <img  src="img/twitter.png" width="40" height="40" alt="Twitter"/>
+        </div>
+    </footer>
+</body>
+</html>
