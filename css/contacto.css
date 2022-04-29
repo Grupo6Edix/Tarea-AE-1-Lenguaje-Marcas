@@ -1,0 +1,125 @@
+
+/*Estilos para el fondo de la caja del formulario*/
+
+.caja_formulario {
+    position: relative;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 45px 200px 65px 200px;
+    width: fit-content;
+}
+
+/*Posicionamiento del título de la sección*/
+
+.caja_formulario h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+/*Estilos de fondo blanco de formulario y espaciado a borde*/
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    border: #F9F9F9 solid 2px;
+    padding: 30px;
+}
+
+/*Colocación en bloque de los elementos*/
+
+form label {
+    display:block;
+    font-size: 25px;  
+    line-height: 2em; 
+}
+
+/*Separación entre bloques de elementos en formulario*/
+
+.separacion_int {
+    border-top: #ebebeb solid 1px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.separacion_int:first-of-type {
+    border-top: none;
+    margin-top: 0px;
+}
+
+/*Estilos para las cajas de entrada del formulario*/
+
+input, textarea, select {
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+option {
+    padding-top: 3px;
+}
+
+textarea {
+    overflow-y: scroll;
+}
+
+/*Estilos para separar los checks y darles forma*/
+
+.check_bola {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.check_cuadrado {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*Resaltado cuando se hace focus a las entradas del formulario*/
+
+input:hover {
+    border: #FF7A8A solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus {
+    background-color: #ebebeb;
+}
+
+textarea:hover {
+    border: #FF7A8A solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea:focus {
+    background-color: #ebebeb;
+}
+
+select:hover {
+    border: #FF7A8A solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select:focus {
+    background-color: #ebebeb;
+    border: #FF7A8A solid 2px;
+}
+
+/*Dispositivos con máximo de pantalla 900px:*/
+
+@media screen and (max-width: 900px) {
+ 
+    .caja_formulario {
+        width: 900px;
+    }
+      
+    .caja_formulario textarea {
+        max-width: 430px;
+    }
+
+}

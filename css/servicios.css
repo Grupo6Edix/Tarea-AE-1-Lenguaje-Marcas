@@ -1,9 +1,9 @@
 /* Estilo para el subtítulo*/
 h3{
-    text-decoration: underline;
     text-align: center;
-    font-size: 25px;
-    margin: 50px 110px 110px 110px;
+    font-size: 35px;
+    margin: 0px 110px 70px 110px;
+    padding-top: 10px;
 }
 
 /*Estilo para el contenedor de los servicios*/
@@ -12,10 +12,8 @@ h3{
     position: relative;
     background-color: #F9F9F9;
     margin: 0 auto;
-    margin-bottom: 100px;
-    padding: 45px 130px 65px 20px;
-    width: fit-content;
-  
+    padding: 45px 100px 100px 100px;
+    width: fit-content; 
 }
 
 /*Estilo para la subsección de cada uno de los servicios*/
@@ -28,35 +26,26 @@ h3{
     margin: 0px 5px 30px 20px;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-radius: 10px;
-   
+    border-radius: 10px  
 }
 
 /*Estilo para los títulos de los servicios dentro de las subsecciónes*/
 
 .servicios h4{
     background-color: #FF7A8A;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 25px;
     text-align: left;
-    margin-top: 20px;
-    margin-left: 45px;
-    margin-bottom: 20px;
-    width: 95%;
-    padding-left: 40px;
+    margin: 20px 45px 50px 45px;
+    padding-left: 45px;
     padding-top: 3px;
     padding-bottom: 3px;
-
-    
-    
-    
 }
 
 /*Estilo para las imagenes dentro de los estilos de los servicios*/
 
 .servicios img {
-    margin: 0px 50px 50px 50px;
-
+    margin: 0px 50px 20px 50px;
 }
 
 /*Estilo para el texto dentro del contenedor de los servicios*/
@@ -64,7 +53,7 @@ h3{
 .servicios p{
     font-size: 20px;
     margin: 20px 50px 50px 50px;
-    
+    text-align: justify;  
 }
 
 /*Estilo para que la imagen queramos que aparezca a la izquierda */
