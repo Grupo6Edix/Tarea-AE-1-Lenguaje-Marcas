@@ -1,0 +1,42 @@
+/* Estilo para el subtítulo de la sección de la página*/
+h3{
+    text-decoration: solid;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 110px 70px 110px;
+    padding-top: 10px;
+}
+
+/* Estilo para el contenedor donde ira el texto */
+.quienes_somos {
+    position: relative;
+    background-color: #F9F9F9;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 45px 130px 65px 20px;
+    width: fit-content;
+    
+}
+
+
+/*Estilo para la imagen que irá en la sección dentro del contenedor*/
+
+.quienes_somos img{
+    width: 15%;
+    height: 15%;
+    margin-left: 42%;
+    
+}
+
+/*Estilo para el texto de la sección de la página dentro del contenedor*/
+
+.quienes_somos p{
+    font-size: 20px;
+    margin-top: 50px;
+    padding-left: 90px;
+    text-align: justify;
+    text-indent: 7%;
+    font-weight: bold;
+    
+}
+
