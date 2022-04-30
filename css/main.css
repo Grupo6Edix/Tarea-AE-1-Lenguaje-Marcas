@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: cursive;
     /*outline: solid 1px red;*/
 }
 
@@ -39,7 +40,7 @@ nav:hover .menu {
 /*Posicionar el menú*/
 .menu {
     position: absolute;
-    width: 250px;
+    width: 270px;
     height: 130px;
     top: 45px;
     padding: 10px 10px 20px 10px;
@@ -90,7 +91,7 @@ nav:hover .menu {
     position: absolute;
     width: 260px;
     top: -2px;
-    left: 225px;
+    left: 248px;
     display:none;
     padding: 2px;
     border-radius: 10px;
@@ -292,7 +293,6 @@ footer .p1 {
 
 footer div {
     position: absolute;
-    width: 230px;
     top: 35px;
     right: 15px;
 }
