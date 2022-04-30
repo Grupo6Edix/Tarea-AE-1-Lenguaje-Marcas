@@ -15,13 +15,14 @@
             <nav>
                 <img src="img/menu.png" width="30" height="45" alt="Menú"/>
                     <ul class="menu">
-                        <li>Nuestros servicios</li>
+                        <li>Nuestros servicios
                             <ul class="submenu">
-                                <li><a href="servicios.html" target="_blank"><img src="img/iconplane.png" width="20" height="20" alt="icono avión"/>Avión</a></li>       
-                                <li><a href="servicios.html" target="_blank"><img src="img/iconcruise.png" width="20" height="20" alt="icono crucero"/>Barco</a></li>
-                                <li><a href="servicios.html" target="_blank"><img src="img/icontrain.png" width="20" height="20" alt="icono tren"/>Tren</a></li>
-                                <li><a href="servicios.html" target="_blank"><img src="img/iconbus.png" width="20" height="20" alt="icono autobús"/>Autobus</a></li>
+                                <li><a href="servicios.html#avion" target="_blank"><img src="img/iconplane.png" width="20" height="20" alt="icono avión"/>Avión</a></li>       
+                                <li><a href="servicios.html#crucero" target="_blank"><img src="img/iconcruise.png" width="20" height="20" alt="icono crucero"/>Barco</a></li>
+                                <li><a href="servicios.html#tren" target="_blank"><img src="img/icontrain.png" width="20" height="20" alt="icono tren"/>Tren</a></li>
+                                <li><a href="servicios.html#autobus" target="_blank"><img src="img/iconbus.png" width="20" height="20" alt="icono autobús"/>Autobus</a></li>
                             </ul>
+                        </li>
                         <li><a href="historia.html" target="_blank">Quiénes somos</a></li>
                         <li><a href="contacto.html" target="_blank">Contacto</a></li>
                     </ul>
@@ -42,45 +43,45 @@
                 <form action="procesarPeticion.jsp" method="get">
                     <div class="separacion_int">
                         <label for="nombre">Nombre: </label>
-                            <input type="text" name="nombre" placeholder="Introduzca su nombre">
+                            <input id="nombre" type="text" name="nombre" placeholder="Introduzca su nombre">
                         <label for="apellidos">Apellidos: </label>
-                            <input type="text" name="apellidos" placeholder="Introduzca sus apellidos">
+                            <input id="apellidos" type="text" name="apellidos" placeholder="Introduzca sus apellidos">
                         <label for="fech_nac">Fecha de nacimiento: </label>
-                            <input type="date" name="fecha"/>
+                            <input id="fech_nac" type="date" name="fecha"/>
                         <label for="email">Email: </label>
-                            <input type="email" ssname="email" placeholder="Introduzca su email" required/>
+                            <input id="email" type="email" name="email" placeholder="Introduzca su email" required/>
                         <label for="sexo">Sexo: </label>
-                            <input class="check_bola" type="radio" name="sexo" value="H"/>Hombre	
+                            <input id="sexo" class="check_bola" type="radio" name="sexo" value="H"/>Hombre	
                             <input class="check_bola" type="radio" name="sexo" value="M"/>Mujer
                             <input class="check_bola" type="radio" name="sexo" value="O"/>Otro
                     </div>
                     <div class="separacion_int">
                         <label for="transporte">Tipo de transporte: </label>	
-                            <input class="check_cuadrado" type="checkbox" name="transporte" value="AV"/>Avión	
+                            <input id="transporte" class="check_cuadrado" type="checkbox" name="transporte" value="AV"/>Avión	
                             <input class="check_cuadrado" type="checkbox" name="transporte" value="TR"/>Tren	
                             <input class="check_cuadrado" type="checkbox" name="transporte" value="BA"/>Barco	
                             <input class="check_cuadrado" type="checkbox" name="transporte" value="AUTO"/>Autobus	
                         <label for="cantidad_personas">Número de viajeros: </label>
-                            <input type="number" min="1" max="5" step="1" name="particular" required/>                   	               
+                            <input id="cantidad_personas" type="number" min="1" max="5" step="1" name="particular" required/>                   	               
                         <label for="grupo">Particular o empresa: </label>
-                            <select name="grupo">
+                            <select id="grupo" name="grupo">
                                 <option value="1">Particular</option>
                                 <option value="2">Empresa</option>
                             </select>
                     </div>
                     <div class="separacion_int">
                         <label for="referente">Referente a:</label>
-                            <select name="referente">
+                            <select id="referente" name="referente">
                                 <option value="1">Viajes</option>
                                 <option value="2">Covid</option>
                                 <option value="3" selected>Otros</option>
                             </select>
                         <label for="consulta">Consulta: </label>
-                            <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+                            <textarea id="consulta" style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
                     </div>
                     <div class="separacion_int">    
                         <label for="terminos">¿Desea recibir información en su correo sobre ofertas de viajes? </label>	
-                            <input type="checkbox" name="terminos" value="Y"/> Sí, quiero recibir información.
+                            <input id="terminos" type="checkbox" name="terminos" value="Y"/> Sí, quiero recibir información.
                     </div>
                     <input type="submit" value="Enviar"/>
                     <input type="reset" value="Limpiar formulario"/>
