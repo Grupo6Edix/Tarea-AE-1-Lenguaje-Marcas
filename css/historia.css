@@ -77,8 +77,26 @@ h3{
         width: 900px;
     }
     
+    .caja_img {
+        margin-left: 0;
+    }
+
     .quienes_somos img {
         padding-left: 100px;
     }
     
+}
+
+/*Media queries para poder verse en ipad en posición vertical*/
+
+@media screen and (max-width: 820px) and (orientation: portrait) {
+
+    .quienes_somos{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .quienes_somos img{
+        padding-left: 180px;
+    }
 }
