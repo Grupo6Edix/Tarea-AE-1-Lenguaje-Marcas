@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: cursive;
+    font-family: Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
     /*outline: solid 1px red;*/
 }
 
@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-/*Estilo para el header, scroll a la página manteniendo elemento*/
+/*Estilo para el header, scroll a la página manteniendo elemento (fixed)*/
 header {
     position: relative;
 }
@@ -37,7 +37,9 @@ nav:hover .menu {
     left: -31px;
 }
 
-/*Posicionar el menú*/
+/*Posicionar el menú:*/
+/*Estilos generales posicionamiento menú*/
+
 .menu {
     position: absolute;
     width: 270px;
@@ -77,21 +79,26 @@ nav:hover .menu {
     transition: all 0.3s;
 }
 
+    /*Hover para aumentar el tamaño de letra del menú*/
+
 .menu>li a:hover{
     font-size: 25px;
 }
 
-/*Hover para hacer aparecer al submenu*/
+    /*Hover para hacer aparecer al submenu cuando pasamos por encima del primer elemento del menú*/
 
 .menu>li:first-child:hover .submenu {
     display: block;
 }
 
+/*Estilos para el submenú:*/
+    /*Colocación general del submenú*/
+
 .submenu {
     position: absolute;
     width: 260px;
     top: -2px;
-    left: 248px;
+    left: 245px;
     display:none;
     padding: 2px;
     border-radius: 10px;
@@ -119,6 +126,8 @@ nav:hover .menu {
     color: black; 
     transition: all 0.3s;
 }
+
+    /*Hover para aumentar tamaño de letra del submenú*/
 
 .submenu>li a:hover{
     font-size: 25px;
@@ -153,7 +162,8 @@ h2 {
     font-size: 25px;
 }
 
-/*Servicios de la empresa*/
+/*Servicios de la empresa:*/
+    /*Fondo de la caja de los servicios*/
 
 .caja_servicios {
     position: relative;
@@ -188,6 +198,8 @@ h2 {
     font-size: 25px;  
 }
 
+    /*Caja individual de cada servicio*/
+
 .service {
     display: inline-block;
     background-color: white;
@@ -203,18 +215,23 @@ h2 {
     margin-right: 20px;
 }
 
+    /*Hover para resaltar las cajas de los servicios con un marco de otro color*/
+
 .service:hover {
     border: #FF7A8A solid 2px;
     font-size: 35px;
 }
 
-/*Noticias*/
+/*Noticias:*/
+    /*Fondo del contenedor de las noticias*/
 
 .contenedor_noticias {
     background-color: #F9F9F9;
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+    /*Contenedor de cada noticia individual*/
 
 .contenedor_noticias section {
     display: inline-block;
@@ -237,6 +254,7 @@ h2 {
     margin: 0px 35px 20px 0px;
     padding: 10px 20px;
 }
+
 .noticia_articulo h4 {
     background-color: #FF7A8A;
     border-radius: 10px;
@@ -245,7 +263,7 @@ h2 {
     margin-bottom: 20px;
     padding-left: 45px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 .noticia_articulo p {
@@ -385,6 +403,14 @@ footer>div img {
         padding-left: 325px;
     }
 
+    .service + .service {
+        margin-right: 0;
+    }
+
+    .margin_right_service {
+        margin-right: 0;
+    }    
+
     .contenedor_noticias h3{  
         text-align: center;
     }
@@ -405,11 +431,12 @@ footer>div img {
     aside {
         position: relative;
         display: inline-block;
-        width: 900px;
         padding-left: 270px;
         padding-top: 45px;
     }
-    
+
+    aside img {
+        width: fit-content;
+    }
+
 }
-
-

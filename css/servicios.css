@@ -39,7 +39,7 @@ h3{
     margin: 20px 45px 50px 45px;
     padding-left: 45px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 /*Estilo para las imagenes dentro de los estilos de los servicios*/
@@ -75,3 +75,37 @@ h3{
     
 }
 
+/*Media queries para poder verse en iphone 12 pro en posición vertical*/
+
+@media screen and (max-width: 390px) and (orientation: portrait) {
+
+    .nuestros_servicios{
+        margin:0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .servicios{
+        margin: 0;
+    }
+
+}
+
+/*Media queries para poder verse en ipad en posición vertical*/
+
+@media screen and (max-width: 820px) and (orientation: portrait) {
+
+    body{
+        width: 820px;
+    }
+
+    .nuestros_servicios{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .servicios{
+        margin: 0;
+    }
+
+}
