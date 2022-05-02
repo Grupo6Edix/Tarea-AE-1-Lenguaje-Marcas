@@ -99,6 +99,10 @@ h3{
         width: 820px;
     }
 
+    header a {
+        left: 43%;
+    }
+
     .nuestros_servicios{
         padding-left: 0;
         padding-right: 0;
